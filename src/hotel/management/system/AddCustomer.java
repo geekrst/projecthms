@@ -1,10 +1,9 @@
 package hotel.management.system;
 
-import java.awt.*;
-
 import javax.swing.*;
-import java.awt.event.*;
-import java.lang.String;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class AddCustomer extends JFrame implements ActionListener{
@@ -190,7 +189,7 @@ public class AddCustomer extends JFrame implements ActionListener{
                 }
 
                 String str = "insert into customer values('"+id+"','"+number+"','"+name+"','"+gender+"','"+phone+"','"+city+"','"+room+"','"+status+"','"+deposit+"')";
-                String str2 = "update room set available = 'Occupied' where room_number='"+room+"'";
+                String str2 = "update room set available = 'Occupied' where room='"+room+"'";
                 try{
                     if(count==3 ) {
 
