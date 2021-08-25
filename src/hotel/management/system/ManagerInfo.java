@@ -126,3 +126,4 @@ public class ManagerInfo extends JFrame implements ActionListener {
 
 }
 
+//PROJECT COMPLETED
